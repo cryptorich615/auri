@@ -1,1 +1,41 @@
+/* styles.css */
+.retro-bg {
+  background: #000 url('assets/stars.gif') repeat;
+  color: #0f0;
+  font-family: 'Comic Sans MS', cursive;
+}
 
+.blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.profile-box {
+  border: 3px dashed #ff00ff;
+  padding: 20px;
+  margin: 10px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/ Glitter text /
+.glitter {
+  background-image: url('assets/glitter.gif');
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/ Custom scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff00ff;
+  border: 2px dotted #0f0;
+}
